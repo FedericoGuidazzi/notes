@@ -1,4 +1,4 @@
-Subject: [[AgentiIntelligenti]]
+📚 Subject: [[AgentiIntelligenti]]
 ## PRS
 
 Il Procedural Reasoning System è stata una delle prime e principali architetture per agenti che ha fatto uso del paradigma **BDI** (belief-desire-intention), ovvero far sì che l’agente possa decidere in autonomia quali sono i possibili piani che può seguire per arrivare al compimento della task, andando anche a tenere in considerazione eventuali cambiamenti nel mondo esterno che possono portare al fatto che un piano diventi impraticabile e quindi debba essere cambiato.

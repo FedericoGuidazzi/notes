@@ -1,4 +1,4 @@
-Subject: [[AgentiIntelligenti]]
+📚 Subject: [[AgentiIntelligenti]]
 ## AgentSpeak(L)
 
 È un linguaggio che cerca di tradurre in un formato quanto più simile alla programmazione classica gli step che un agente segue per portare a termine i gol. 

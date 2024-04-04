@@ -1,0 +1,3 @@
+📚 Subject: [[AgentiIntelligenti]]
+## Logica Modale
+

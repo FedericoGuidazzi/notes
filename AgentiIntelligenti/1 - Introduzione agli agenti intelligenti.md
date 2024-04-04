@@ -1,4 +1,6 @@
-Subject: [[AgentiIntelligenti]]
+📚 Subject: [[AgentiIntelligenti]]
+## Introduzione
+
 I trend che hanno caratterizzato la computazione sono stati:
 
 * **Ubiquità**, ovvero il fatto che con lo sviluppo tecnologico, i dispositivi informatici sono disponibili quasi ovunque, è quindi utile poterli utilizzare per risolvere task specifiche in autonomia.

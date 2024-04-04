@@ -1,4 +1,6 @@
-Subject: [[AgentiIntelligenti]] 
+📚 Subject: [[AgentiIntelligenti]] 
+## Agenti Razionali
+
 Gli **agenti intenzionali** sono sistemi che individuano un insieme di **task** che devono essere portate a termine basandosi su un’insieme di **credenze**, questo insieme rappresenta le **intenzioni** del sistema.
 
 Con **intenzione**, in questo ambito, non andiamo a intendere un’intenzione come quella umana, ma rappresenta **un'astrazione**, utile per analizzare in maniera veloce i sistemi e il perché eseguono una serie di task invece che altre, nella realtà dei fatti tutte le azioni compiute da un sistema si basano su **un’analisi delle informazioni e una conseguente scelta dettata dall’algoritmo passato o appreso**.
