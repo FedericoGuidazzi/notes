@@ -6,9 +6,9 @@
 
 Le componenti del linguaggio sono:
 
-**![](https://lh7-us.googleusercontent.com/lkdHTKYh8X4vXlFLLWVbbyFkGoae0UXfxi1eQtGpCYKY3DudR-Kq0JrnhSZYgx7rkmiqhsHr6-ux3W7CKOlCi3yJf2DsrUI1Eg-AQmEMFCLnn69IeF2LMwk3MbV1gk3qCZnLZgqKejh6NlSJqwHKbr8)**
+**![Photo | center | 256](https://lh7-us.googleusercontent.com/lkdHTKYh8X4vXlFLLWVbbyFkGoae0UXfxi1eQtGpCYKY3DudR-Kq0JrnhSZYgx7rkmiqhsHr6-ux3W7CKOlCi3yJf2DsrUI1Eg-AQmEMFCLnn69IeF2LMwk3MbV1gk3qCZnLZgqKejh6NlSJqwHKbr8)**
 
-**![](https://lh7-us.googleusercontent.com/ardS8vMHH9isTZPTcDV0IEgHv0EQG6Pp4-eJklqGtyAaEkpFdQfeIw8uXcGEQd-J5hzTqJsN09KnpS-z8cjQYmro6c-qmmLgBdHucwna_ace7rNJBapRRjqoBvJZdjuzkSeviCnl89NrdwllcmTe3DQ)**
+**![Photo | center | 400](https://lh7-us.googleusercontent.com/ardS8vMHH9isTZPTcDV0IEgHv0EQG6Pp4-eJklqGtyAaEkpFdQfeIw8uXcGEQd-J5hzTqJsN09KnpS-z8cjQYmro6c-qmmLgBdHucwna_ace7rNJBapRRjqoBvJZdjuzkSeviCnl89NrdwllcmTe3DQ)**
 
 
 ### BELIEF
@@ -39,7 +39,7 @@ Quando l'agente acquisisce un nuovo goal oppure nota una modifica nell'ambiente 
 **+location(waste, X)**: aggiunto il belief che nella posizione X si trova waste
 **+!cleared(X)**: aggiunto il goal di pulire X 
 
-**![](https://lh7-us.googleusercontent.com/7On59vB7ifiphVa3D0yl2twvzU5vfTyQNcbvyXPeFb9Fy4-_WT2GKqnJ4DxAaVzG77-gzTTI_Kyl1Eh9BWr4vfqQaWhuS6KoU0lOTrgvaGKHGM6TOHLLbyH9Dr4T6QFXsTP8TcfmeWIgAPNAInFKLYw)**
+**![Photo | center | 512](https://lh7-us.googleusercontent.com/7On59vB7ifiphVa3D0yl2twvzU5vfTyQNcbvyXPeFb9Fy4-_WT2GKqnJ4DxAaVzG77-gzTTI_Kyl1Eh9BWr4vfqQaWhuS6KoU0lOTrgvaGKHGM6TOHLLbyH9Dr4T6QFXsTP8TcfmeWIgAPNAInFKLYw)**
 
 ### Azione
 
@@ -56,7 +56,7 @@ piano := head <− body
 
 head := triggering event : context 
 
-**![](https://lh7-us.googleusercontent.com/-XhGolUVa4IHzlMIyiEmbRxvUVLY6bBuP4VS_XyAj0log-5LVdU4hQ5s7FIo8CV6MSSk2PENUX7tryFeoikuPPaTkmaMAHzlLLsMq73StH1_b41CeBGVTVXfLNz_S77GPIErp2H1skDPUZE_IHGlZ58)**
+**![Photo | center | 512](https://lh7-us.googleusercontent.com/-XhGolUVa4IHzlMIyiEmbRxvUVLY6bBuP4VS_XyAj0log-5LVdU4hQ5s7FIo8CV6MSSk2PENUX7tryFeoikuPPaTkmaMAHzlLLsMq73StH1_b41CeBGVTVXfLNz_S77GPIErp2H1skDPUZE_IHGlZ58)**
 
 ## Semantica Operazionale
 

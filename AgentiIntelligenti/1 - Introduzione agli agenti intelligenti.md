@@ -23,7 +23,7 @@ Per interagire con successo, richiedono la capacità di **cooperare**, **coordin
 
 Un agente in sostanza è un sistema di computazione, capace di agire **autonomamente** in un qualche **ambiente** per portare a termine gli **obiettivi** per il quale è stato progettato.
 
-**![](https://lh7-us.googleusercontent.com/GReEvrc0o3lEf5EtrmegAuGAw3QbBu42ZYjIWK2u3Wf3JR79tu_HWPf3BGCQXY9P0pP31EaoyxRuI_LsNsuSmCT2F_CCET2lZ2YmqC7h_3jsAOfryhnk3dgl5B7JOzvp4s2_IxO-orDoyfWURBjsbUc)**
+**![Photo | center | 512](https://lh7-us.googleusercontent.com/GReEvrc0o3lEf5EtrmegAuGAw3QbBu42ZYjIWK2u3Wf3JR79tu_HWPf3BGCQXY9P0pP31EaoyxRuI_LsNsuSmCT2F_CCET2lZ2YmqC7h_3jsAOfryhnk3dgl5B7JOzvp4s2_IxO-orDoyfWURBjsbUc)**
 
 Un esempio di agente può essere il cruise control, che analizza l'ambiente circostante per poter decidere se frenare o accelerare, oppure più semplicemente un termostato che in base alla temperatura che rileva (ambiente) decide se accendere o spegnere il riscaldamento.
 
@@ -37,11 +37,11 @@ Per flessibile si intende:
 
 * **reattivo**, per reattività si intende la capacità di **adattare le decisioni all'ambiente su cui opera**, che per natura è dinamico e quindi cambia nel tempo. 
 Questa reattività sono in sostanza delle decisioni if then che non hanno bisogno di "**ragionamento**" (se l'auto davanti frena -> freno). 
-**![](https://lh7-us.googleusercontent.com/NSmrLh8kbmuDA574BpiWI0gUNyu8TVErlJufNmiLE64DMtKj_MZelIVTH6lOmrBmR8UiSGVfCxq39tYRPvH0DGe2dARIQGviRmCqF0oG0VcI5A12-HbhjnU757nHa4af20d5_vDU32ZMThStNUhGnzU)**
+**![Photo | center | 512](https://lh7-us.googleusercontent.com/NSmrLh8kbmuDA574BpiWI0gUNyu8TVErlJufNmiLE64DMtKj_MZelIVTH6lOmrBmR8UiSGVfCxq39tYRPvH0DGe2dARIQGviRmCqF0oG0VcI5A12-HbhjnU757nHa4af20d5_vDU32ZMThStNUhGnzU)**
 * **proattivo**, con questo termine si intende che gli agenti non debbano essere solamente guidati dagli eventi, ma devono agire in prima persona per tentare di raggiungere gli obiettivi, quindi **prendere l'iniziativa**. 
 Di conseguenza è necessario che l'agente faccia simulazioni di eventuali azioni che può effettuare per andare a calcolare l'impatto dell'azione. 
 
-**![](https://lh7-us.googleusercontent.com/UHQ_y8J6BNlq5lndLezKNwUOtRLw3edTnKUdc5CtyeNjW6aFvijkPscbwspsG4qNor7X548lWXm8HPIph40qCHYL6DutazoI5JytoYk_25Nw7WTTn6KQb4QObqqGQlvSqaszvLappzbhhQkdhsXUJ2c)**
+**![Photo | center | 512](https://lh7-us.googleusercontent.com/UHQ_y8J6BNlq5lndLezKNwUOtRLw3edTnKUdc5CtyeNjW6aFvijkPscbwspsG4qNor7X548lWXm8HPIph40qCHYL6DutazoI5JytoYk_25Nw7WTTn6KQb4QObqqGQlvSqaszvLappzbhhQkdhsXUJ2c)**
 * **sociale**, con questo si intende la capacità di un agente di comunicare con gli altri, attraverso un **linguaggio di comunicazione**, per poter **cooperare**.
 
 La **reattività** e **proattività** sono molte volte in **conflitto**, in quanto per fare delle scelte **proattive** c'è bisogno di **simulazioni**, mentre per la **reattività** si vuole una **scelta veloce**, che quindi va ad escludere la possibilità di fare delle simulazioni. 
@@ -61,7 +61,7 @@ Ogni codice per dirsi di qualità deve essere:
 Uno degli ingredienti fondamentali per riuscire a sviluppare codice di qualità è la **modularizzazione**.
 
 Esiste un modo per riuscire a comparare diverse soluzioni di modularizzazione, ovvero il triangolo di Meyer. 
-**![](https://lh7-us.googleusercontent.com/PFZYyAG6bswn6lgCxK_62HaDDgEfTjF_fFCPvIc9TlZeNbAF3cez84YeEcTDwgGpW9QXbEYS3F1aG4mXQBH7q3MBwgTNyuungH0XEEWq7ofpPDuinUoBE_e1nJ11SGIE2lqYNdRRD9pkrWnAcsPqHSw)**
+**![Photo | center | 512](https://lh7-us.googleusercontent.com/PFZYyAG6bswn6lgCxK_62HaDDgEfTjF_fFCPvIc9TlZeNbAF3cez84YeEcTDwgGpW9QXbEYS3F1aG4mXQBH7q3MBwgTNyuungH0XEEWq7ofpPDuinUoBE_e1nJ11SGIE2lqYNdRRD9pkrWnAcsPqHSw)**
 Secondo questo metodo di valutazione, **la Programmazione orientata agli Agenti**, è la migliore, in quanto è l'unica che modella gli agenti e l'ambiente e che mette entrambi allo stesso piano.
 
 

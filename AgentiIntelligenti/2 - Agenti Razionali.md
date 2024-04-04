@@ -43,14 +43,14 @@ Le uniche circostanze dove questo problema non sussiste sono:
 
 Quello nella figura sotto è una prima versione di un algoritmo di un agente
 
-**![](https://lh7-us.googleusercontent.com/DyD7UBsavCYvnjS_7iK7DLKcF6lXVdPONkX5YLIzftcfOgq2ocnDAoky_7-GLaoeqEGHVObx9J6F3iZWeRdmSrmsj5JhUOEHeWpuhWyM6gk3YRIaev5RByflt5f55-P7TatqRq2p2BWg-toKwk0yWaM)**
+**![Photo | center | 512](https://lh7-us.googleusercontent.com/DyD7UBsavCYvnjS_7iK7DLKcF6lXVdPONkX5YLIzftcfOgq2ocnDAoky_7-GLaoeqEGHVObx9J6F3iZWeRdmSrmsj5JhUOEHeWpuhWyM6gk3YRIaev5RByflt5f55-P7TatqRq2p2BWg-toKwk0yWaM)**
 
 Durante il ciclo possiamo vedere come vengano individuate le credenze sulle quali ci si basa per andare ad individuare le intenzioni e successivamente viene fatto il piano per arrivare alla conclusione di un processo.
 
 Questo algoritmo però ha vari problemi per quanto riguarda l’esecuzione delle azioni che devono essere eseguite per portare a termine un processo, infatti, una volta che parte l’esecuzione questa non **termina** fino a che non viene portato a termine l’obiettivo, che però **nel frattempo potrebbe essere cambiato o non essere più l’ottimo**.
 
 Il processo con il quale sono individuati i passi da eseguire prende il nome di **commitment** e ne sono presenti vari tipi
-**![](https://lh7-us.googleusercontent.com/6wndO-h4Y3vM-e4ne7K_be6tE7qPIBWBwtj8tf-t-FFmSQiXcBx-0dPLbiK7ElTW6t66AaTVBnyP2GTlbmWYVZe2oFDAYV4QSHn0nuUw3TgaWZU-l8AKhcLSTMNTWBPGr1yGITFpfQ11dZjVl32VxDs)**
+**![Photo | center | 512](https://lh7-us.googleusercontent.com/6wndO-h4Y3vM-e4ne7K_be6tE7qPIBWBwtj8tf-t-FFmSQiXcBx-0dPLbiK7ElTW6t66AaTVBnyP2GTlbmWYVZe2oFDAYV4QSHn0nuUw3TgaWZU-l8AKhcLSTMNTWBPGr1yGITFpfQ11dZjVl32VxDs)**
 
 Il **Blind** è quello che abbiamo ora nell’algoritmo, quindi anche se il mondo cambia, una volta scelto un piano si porta a termine a tutti i costi.
 
@@ -59,4 +59,4 @@ Il **Single-minded** è una versione un po’ più permissiva, con il quale cont
 La versione **Open-minded**, invece, risulta essere la migliore perché continuerà a seguire il piano finché questo risulta il migliore, ma potrà cambiare non appena riterrà che un altro piano sia migliore, anche questa versione però può avere un grave problema, ovvero cambia idea troppo spesso e quindi non riesce mai a portare a termine un piano.
 
 La versione migliorata dell’algoritmo di partenza è quindi una che utilizza l’open-minded commitment ma con un controllo sulla necessità di cambiare piano una volta scelto.
-**![](https://lh7-us.googleusercontent.com/9H3i3R_YL-X40L-XcP3GHdohjVKW8JvtCsVLS8r-e9_8eJ6ujkKuL9kq10aflQmpsByv2h9tbe6FvvISn94EpcHRWa2IwJ5cA9GimvTl4hUPv88BFNVwbOuYAh8YQTrE_ZrIf9qfMBAV1jdKnhFrwTY)**
+**![Photo | center | 600](https://lh7-us.googleusercontent.com/9H3i3R_YL-X40L-XcP3GHdohjVKW8JvtCsVLS8r-e9_8eJ6ujkKuL9kq10aflQmpsByv2h9tbe6FvvISn94EpcHRWa2IwJ5cA9GimvTl4hUPv88BFNVwbOuYAh8YQTrE_ZrIf9qfMBAV1jdKnhFrwTY)**
