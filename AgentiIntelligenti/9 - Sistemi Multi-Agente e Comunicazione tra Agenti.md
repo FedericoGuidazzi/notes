@@ -46,7 +46,7 @@ La comunicazione permette agli agenti di **coordinarsi**, in base al rapporto tr
 - *Cooperazione*, nel caso gli agenti cerchino di aiutarsi a vicenda. 
 - *Negoziazione*, nel caso gli agenti siano antagonisti, competitivi o semplicemente self-interested (in un'asta il compratore e l'offerente sono antagonisti perché cercano di far sì che il prezzo sia quello più conveniente per sé stessi, facendo comunque un azione di coordinazione per portare a termine i loro obiettivi).
 
-## Agent Communication Languages (ACL)
+### Agent Communication Languages (ACL)
 
 Gli agenti comunicano tra loro scambiandosi messaggi, tra cui anche richieste, gli agenti però sono **self-interested**, quindi possono deliberatamente decidere se **accettare** la richiesta, **rifiutarla** o **ignorarla**.
 
@@ -59,7 +59,7 @@ Questo progetto diede origine a 3 linguaggi:
 - KIF
 - Ontolingua
 
-### KQML
+#### KQML
 
 È un linguaggio di alto livello utilizzato per la comunicazione, è indipendente dal:
 - Protocollo utilizzato (tcp/ip)
@@ -91,7 +91,7 @@ Le **azioni performative** possibili sono:
 KQML introduce anche una classe speciale di agenti, che prende il nome di *Broker*, essi hanno informazioni per l'inoltro dei messaggi o l'individuazione dei servizi, e hanno il compito di mettere in comunicazione agenti.
 ![[Pasted image 20240411150212.png]]
 
-#### Semantica
+##### Semantica
 
 Inizialmente KQML non aveva una propria semantica, successivamente ne viene introdotta una basata su:
 - *Precondizioni*, ovvero lo stato in cui gli agenti devono essere per mandare e ricevere la performativa.
@@ -108,7 +108,7 @@ Completion KNOW(B, BEL(A, X))
 ```
 
 Le condizioni potrebbero anche essere **vuote**.
-### KIF
+#### KIF
 
 È un linguaggio utilizzato per dichiarare delle **proprietà** e **relazioni** all'interno di un dominio.
 Es:
@@ -125,11 +125,11 @@ Es:
 ```
 
 
-### Ontolingua
+#### Ontolingua
 
 Un linguaggio per definire ontologie **condivise**, permettendo di dare **significati uniformi** su **applicazioni diverse** agli stessi concetti.
 
-### Foundation for Intelligent Physical Agents (FIPA)
+#### Foundation for Intelligent Physical Agents (FIPA)
 
 È stata creata nel '96 per stabilire uno **standard** per il software per agenti interagenti ed eterogenei e sistemi basati su agenti, il frutto di ciò è stato un linguaggio per la comunicazione degli agenti *simile a KQML*, infatti la principale **differenza** tra i due è la **semantica** e la **mancanza dei facilitatori** (Broker) in FIPA.
 
@@ -143,7 +143,7 @@ La sintassi dei due linguaggi però risulta molto simile.
 )
 ```
 
-#### Semantica
+##### Semantica
 
 Il *Semantic Language* (*SL*), è il linguaggio che sta alla base della semantica di FIPA.
 
@@ -152,6 +152,49 @@ SL è una logica multimodale basata su operatori modali:
 - $U_i$ϕ i è incerto su ϕ ma pensa che ϕ è più probabile di ¬ϕ 
 - $C_i$ϕ i desidera (choice, goal) che ϕ valga correntemente
 
-SONO A SLIDE 42
+SL permette un ragionamento sulle azioni, questo avviene attraverso una catena di condizioni, le principali sono:
+- *Feasible(a, ϕ)*, a può occorrere e se occorre, ϕ sarà vera dopo tale occorrenza
+- *Done(a, ϕ)*, a è appena occorsa e ϕ è vera dopo tale occorrenza
+- *Agent(i, a)*, i è il solo agent che esegue l’azione a
+
+Viene, inoltre, definito anche il concetto di **persistent goal** ($PG_i$ϕ), sulla base di belief, choice ed eventi.
+
+Anche in questo caso sono presenti le condizioni, che prendono il nome di:
+- Feasibility Precondition (**FP**), condizioni che devono valere per il mittente per poter iniziare la conversazione
+- Rational Effects (**RE**), effetti dell'esecuzione di un'azione sull'agente
+
+Tutte le comunicazioni devono essere **Conformi**, ovvero per poter essere avviate devono valere le FP, mentre gli RE non sono garantiti (poiché non è garantito che questi avvengano, in quanto l'agente può decidere di non eseguire l'azione richiesta) e di conseguenza risultano *irrilevanti* per la conformità.
+
+Il linguaggio è basato su due operatori:
+- **Inform**
+- **Request**
+Attraverso i quali, con delle combinazioni, sono sviluppati tutti i rimanenti.
+
+### Semantica Sociale per la comunicazione
+
+La semantica sociale nasce per adattarsi al meglio a situazioni in cui gli agenti sono **eterogenei** e **competitivi**.
+
+- [9] È impossibile fidarsi completamente di altri agenti o fare forti assunzioni a proposito dello stato interno degli agenti e sul loro modo di ragionare
+
+Secondo M. P. Singh, esponente di questa idea di comunicazione, un buon ACL deve essere:
+- *Formale*, deve essere **chiaro** e **senza ambiguità**
+- *Dichiarativo*, deve descrivere il **cosa** e non il come
+- *Verificabile*, deve poter permettere di fare **verifiche** sulle motivazioni dei **comportamenti** degli **agenti**
+- *Significante*, trattare la comunicazione **secondo il suo significato** e non solo come un'unione di operatori
+
+La semantica sociale si basa sui **Practical Commitments**, ovvero accordi che un agente (il debitore) prende con un altro agente (il creditore) per eseguire una determinata azione.
+
+I Commitments, per Singh, si compongono di 4 parti:
+	C(debtor, creditor, antecedent, consequence)
+
+Es:
+	C(Libreria, Alice, $12, Libro), ovvero la libreria dovrà dare il libro ad Alice una volta che lei avrà pagato $12.
+
+Il commitment ha un vero e proprio ciclo di vita
+![[Pasted image 20240411182207.png]]
+Tra i possibili stati troviamo:
+- **Detach**, ovvero l'agente creditore ha terminato le sue azioni (Alice ha pagato i $12)
+- **Discharge**, ovvero l'agente debitore ha terminato le sue azioni (Libreria ha dato il libro)
+
 
 ➡ [[]]
