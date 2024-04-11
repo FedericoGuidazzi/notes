@@ -88,6 +88,26 @@ Le **azioni performative** possibili sono:
 - *sorry*, il sender non può fornire una risposta più specifica
 - *tell*, il sender informa il receiver che conosce il content
 
+KQML introduce anche una classe speciale di agenti, che prende il nome di *Broker*, essi hanno informazioni per l'inoltro dei messaggi o l'individuazione dei servizi, e hanno il compito di mettere in comunicazione agenti.
+![[Pasted image 20240411150212.png]]
+
+#### Semantica
+
+Inizialmente KQML non aveva una propria semantica, successivamente ne viene introdotta una basata su:
+- *Precondizioni*, ovvero lo stato in cui gli agenti devono essere per mandare e ricevere la performativa.
+- *Post-condizioni*, ovvero lo stato in cui gli agenti si troveranno una volta inviato e ricevuto il messaggio.
+- *Condizioni di completamento*, ovvero lo stato finale dopo che una conversazione è terminata.
+
+```KQML
+Pre(A) BEL(A, X) ∧ KNOW(A, WANT(B,KNOW(B, S)))
+Pre(B) INT(B,KNOW(B, S))
+// dove S pu`o essere BEL(B, X) oppure ¬BEL(B, X)
+Post(A) KNOW(A,KNOW(B, BEL(A, X))) 
+Post(B) KNOW(B, BEL(A, X)) 
+Completion KNOW(B, BEL(A, X))
+```
+
+Le condizioni potrebbero anche essere **vuote**.
 ### KIF
 
 È un linguaggio utilizzato per dichiarare delle **proprietà** e **relazioni** all'interno di un dominio.
@@ -108,5 +128,30 @@ Es:
 ### Ontolingua
 
 Un linguaggio per definire ontologie **condivise**, permettendo di dare **significati uniformi** su **applicazioni diverse** agli stessi concetti.
+
+### Foundation for Intelligent Physical Agents (FIPA)
+
+È stata creata nel '96 per stabilire uno **standard** per il software per agenti interagenti ed eterogenei e sistemi basati su agenti, il frutto di ciò è stato un linguaggio per la comunicazione degli agenti *simile a KQML*, infatti la principale **differenza** tra i due è la **semantica** e la **mancanza dei facilitatori** (Broker) in FIPA.
+
+La sintassi dei due linguaggi però risulta molto simile.
+```FIPA
+(inform 
+	:sender agent1 
+	:receiver agent2 
+	:language Prolog 
+	:content ‘‘weather(today, raining)’’ 
+)
+```
+
+#### Semantica
+
+Il *Semantic Language* (*SL*), è il linguaggio che sta alla base della semantica di FIPA.
+
+SL è una logica multimodale basata su operatori modali:
+- $B_i$ϕ i crede ϕ 
+- $U_i$ϕ i è incerto su ϕ ma pensa che ϕ è più probabile di ¬ϕ 
+- $C_i$ϕ i desidera (choice, goal) che ϕ valga correntemente
+
+SONO A SLIDE 42
 
 ➡ [[]]
