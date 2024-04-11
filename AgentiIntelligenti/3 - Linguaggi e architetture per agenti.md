@@ -1,5 +1,6 @@
 📚 Subject: [[AgentiIntelligenti]]
-## PRS
+⬅ [[2 - Agenti Razionali]]
+# PRS
 
 Il Procedural Reasoning System è stata una delle prime e principali architetture per agenti che ha fatto uso del paradigma **BDI** (belief-desire-intention), ovvero far sì che l’agente possa decidere in autonomia quali sono i possibili piani che può seguire per arrivare al compimento della task, andando anche a tenere in considerazione eventuali cambiamenti nel mondo esterno che possono portare al fatto che un piano diventi impraticabile e quindi debba essere cambiato.
 
@@ -36,12 +37,12 @@ Ogni volta che viene individuato un piano da seguire viene avviato un **control 
 Ad ogni passo viene **aggiornato **anche lo **stack delle intenzioni**, ovvero l’insieme dei passi ancora da compiere, in cui le azioni da compiere per prime sono posizionate alla cima dello stack, ad ogni aggiornamento della event queue il **posizionamento delle intenzioni può variare** (in caso di abbandono del piano attuale, verranno rimosse dalle prime posizioni tutti i passi legati a quel piano, oppure in caso di presenza di un sotto-gol da portare a termine prima del gol principale, verranno inserite nelle prime posizioni dello stack le azioni legate al sotto-gol). 
 
 
-### AgentSpeak(L)
+## AgentSpeak(L)
 
 AgentSpeak(L) è un linguaggio proposto per la programmazione di agenti BDI utilizzando una sintassi operazionale, cerca quindi di andare a colmare il gap tra specifica teorica e implementazione di un agenti BDI, questo linguaggio ha dato origine a JASON (ovvero la prima implementazione di AgentSpeak(L)).
 
 
-## Agent-oriented programming (AOP)
+# Agent-oriented programming (AOP)
 
 Questo nuovo paradigma di programmazione promuove una visione sociale della computazione, in cui più agenti comunicano tra loro.
 
@@ -60,11 +61,11 @@ Anche in questo caso per riuscire ad arrivare ad un gol finale possono dover ess
 
 * **Lettura dei messaggi** e **aggiornamento** di **belief** e **commitment**.
 * **Esecuzione** del **commit** per il tempo attuale **eventualmente** portando ad una **modifica** dei **belief**.
-## Agenti reattivi
+# Agenti reattivi
 
 Ci sono **tanti problemi irrisolti** nell'_AI simbolica_, proprio per questo si sono sviluppate **architetture reattive** che **variano molto tra loro**, a che si basano tutte sul pensiero che l'approccio che utilizza l'AI simbolica sia **sbagliato**.
 
-### L'Approccio di Brooks
+## L'Approccio di Brooks
 
 Brooks per spiegare la sua idea di agente reattivo ha individuato 3 punti:
 
@@ -103,7 +104,7 @@ Mentre i lati negativi sono:
 * È difficile **ingegnerizzare** agenti reattivi specifici in quanto le informazioni che questo ha derivano dall'ambiente e questo può cambiare ogni volta
 * È difficile realizzare agenti con un g**rande numero di behavior** in quanto è **complesso** trovare un **ordine** dei **livelli** che vada sempre bene.
 
-## Architetture Ibride
+# Architetture Ibride
 
 Le architetture ibride nascono per cercare di prendere i punti migliori delle architetture reattive e deliberative, in quanto un approccio puro non è ottimo per nessuna delle due architetture citate.
 
@@ -126,7 +127,7 @@ Due esempi di questa architettura sono:
 * TOURINGMACHINES
 * inteRRaP
 
-### TOURINGMACHINES
+## TOURINGMACHINES
 
 L'architettura consiste di sottoinsiemi di **percezione** ed **azione**, che si interfacciano direttamente con l'ambiente dell'agente e **3 control layers** inseriti in un **control framework**, che ha il compito di mediare tra i livelli. \
 **![Photo | center | 512](https://lh7-us.googleusercontent.com/hBZwO-803edODvZgVugSgHZTMPRxGgkBH_9zi1-ESUzwXhm8pHX6sWUdcRl9vzW8qjAz7T6AFco85PYl3egWbFrP9TtJ0xf5F6T7w-0Yy7XN8z_yreiK7rAlPtxwUNm8y8rug3YOhPXFji7c-C635fk)**
@@ -139,7 +140,7 @@ Il **modelling layer**, è il livello che contiene la r**appresentazione simboli
 
 I layer comunicano tra loro e sono inseriti all'interno del **control subsystem** che ha il compito di **scegliere l'azione da eseguire**.
 
-### inteRRaP
+## inteRRaP
 **![Photo | center | 512](https://lh7-us.googleusercontent.com/Sk378DQLpe5egU0_lWAS7z3L3HWJSBssAb5KGbLGXhEcITrXPhpcZ34V3k5NbJxlTEB2-aXt_sXJ6EaJVE4zYIrXdSB_OLmmzLbwu-C3zobuykeQuasPEKKrcCECIdLpVy4PYi7eRLuYvcS9lTsbQS8)**
 
 Su questa architettura si basa “**Stanley**”, ovvero una macchina autonoma sviluppata da Stanford che è riuscita a concludere per la prima volta un percorso nel deserto. 
@@ -148,3 +149,6 @@ I livelli che sono stati individuati nella sua architettura sono:
 **![Photo | center | 512](https://lh7-us.googleusercontent.com/Q6pw1b8n96jHziFw9dRqYpNYHur__rewoJy3Md-A0RXqoHwY_LPqBUOqnfBzUICG5O3u6fjxRlqYTQflb9T6mJITgv8Dzb2U24AZM4g9zPo6g5Bnvgn4iuACo3zQNwwujF4T8sGG-fYpnoxVqFuL9mo)**
 
 Il **problema più grande** individuato dal team di Stanford è stato la **percezione** dell'ambiente esterno più del compiere l'azione in se, infatti, l'azione stop in caso di ostacolo è stata semplice da implementare, ma è stata molto complessa la parte dell'individuazione dell'ostacolo, proprio per questo la macchina aveva **tantissimi sensori** per riuscire ad avere più informazioni possibili dell'ambiente circostante.
+
+
+➡ [[4 - AgentSpeak e Jason]]

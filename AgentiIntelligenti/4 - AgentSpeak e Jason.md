@@ -1,5 +1,6 @@
 📚 Subject: [[AgentiIntelligenti]]
-## AgentSpeak(L)
+⬅ [[3 - Linguaggi e architetture per agenti]]
+# AgentSpeak(L)
 
 È un linguaggio che cerca di tradurre in un formato quanto più simile alla programmazione classica gli step che un agente segue per portare a termine i gol. 
 È pensato per la programmazione di agenti con una architettura **BDI** (belief, desire, intention).
@@ -11,7 +12,7 @@ Le componenti del linguaggio sono:
 **![Photo | center | 400](https://lh7-us.googleusercontent.com/ardS8vMHH9isTZPTcDV0IEgHv0EQG6Pp4-eJklqGtyAaEkpFdQfeIw8uXcGEQd-J5hzTqJsN09KnpS-z8cjQYmro6c-qmmLgBdHucwna_ace7rNJBapRRjqoBvJZdjuzkSeviCnl89NrdwllcmTe3DQ)**
 
 
-### BELIEF
+## BELIEF
 
 I **belief**, sono indicati da un nome (scritto con l'iniziale in minuscolo) seguito dalle parentesi tonde, che ospitano i componenti della credenza, per esempio:
 
@@ -20,7 +21,7 @@ I **belief**, sono indicati da un nome (scritto con l'iniziale in minuscolo) seg
 **location(car, X).**
 
 Dove X,Y sono variabili (i cui nomi hanno sempre la prima lettera scritta in caps), mentre robot è una "costante" che indica l'agente in se in questo caso.
-### Goal
+## Goal
 
 Un goal è uno stato che l'agente vuole raggiungere. \
 Esistono 2 tipi di gol:
@@ -30,7 +31,7 @@ Esistono 2 tipi di gol:
 
 **!cleared (b)**: l’agente vuole pulire la corsia b.
 **location (car ,b)**: l'agente vuole verificare se nella corsia b ci sono auto
-### Triggering Event
+## Triggering Event
 
 Quando l'agente acquisisce un nuovo goal oppure nota una modifica nell'ambiente può far scattare aggiunte o rimozioni di beliefs o goals.
 
@@ -41,13 +42,13 @@ Quando l'agente acquisisce un nuovo goal oppure nota una modifica nell'ambiente 
 
 **![Photo | center | 512](https://lh7-us.googleusercontent.com/7On59vB7ifiphVa3D0yl2twvzU5vfTyQNcbvyXPeFb9Fy4-_WT2GKqnJ4DxAaVzG77-gzTTI_Kyl1Eh9BWr4vfqQaWhuS6KoU0lOTrgvaGKHGM6TOHLLbyH9Dr4T6QFXsTP8TcfmeWIgAPNAInFKLYw)**
 
-### Azione
+## Azione
 
 Sono gli tutti i passi che l'agente esegue per portare a termine un goal, è indicato da una sintassi simile a quella dei belief, ma si distingue in quanto il nome associato all'azione è associato ad un simbolo di azione.
 
 **move (X,Y)**: indica che l'agente si sposta da X per andare in Y
 
-### Piano
+## Piano
 
 Un piano indica la serie di passi che potrebbe fare un agente per compiere un goal.
 
@@ -58,7 +59,7 @@ head := triggering event : context
 
 **![Photo | center | 512](https://lh7-us.googleusercontent.com/-XhGolUVa4IHzlMIyiEmbRxvUVLY6bBuP4VS_XyAj0log-5LVdU4hQ5s7FIo8CV6MSSk2PENUX7tryFeoikuPPaTkmaMAHzlLLsMq73StH1_b41CeBGVTVXfLNz_S77GPIErp2H1skDPUZE_IHGlZ58)**
 
-## Semantica Operazionale
+# Semantica Operazionale
 
 Al momento dell'esecuzione l'agente può essere visto come costituito da un insieme di:
 
@@ -89,7 +90,7 @@ Ciclo applicato all'esempio del robot.
 
 **![](https://lh7-us.googleusercontent.com/oD7rbL6QgiU57D-R__rC5iKs8rqfOF16l3Q7DUOKSzxfGjJuhXMhsAfmIYNoYI3YAiEHETqO8kyWqVy9vwRBJJmBslR6Pa4Y-tRm6bJ6xM7Felqns9nldFYSFoXEk6ue0uxsnHYDLfOT1jLECs_u1Ck)**
 
-## Jason
+# Jason
 
 Jason è una prima implementazione di AgentSpeak(L), implementato in Java ed open-source.
 La creazione di un programma con questo linguaggio è molto semplice, basta fare:
@@ -112,3 +113,5 @@ Le principali differenze che Jason ha rispetto ad AgentSpeak(L) sono:
     * .print(), utilizzata per scrivere messaggi nella console.
 
 Attraverso l'utilizzo di Jason è inoltre possibile la **personalizzazione** degli **agenti** e delle **operazioni** che questi compiono, basterà dichiarare delle nuove classi Java in cui vengono descritti gli agenti o le operazioni e successivamente potranno essere utilizzate.
+
+➡ [[5 - Logica e Agenti]]

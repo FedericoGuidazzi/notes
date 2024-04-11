@@ -1,5 +1,5 @@
 📚 Subject: [[AgentiIntelligenti]]
-## Introduzione
+# Introduzione
 
 I trend che hanno caratterizzato la computazione sono stati:
 
@@ -50,7 +50,7 @@ Il **bilanciamento** di queste due caratteristiche è quindi **fondamentale** pe
 
 Riassumendo, quindi, un agente intelligente si distingue da un semplice programma per le caratteristiche sopra citate, che portano al fatto che l'ambiente su cui va ad operare l'agente si **muta ogni volta che questo esegue delle azioni**.
 
-## Triangolo della computazione
+# Triangolo della computazione
 
 Ogni codice per dirsi di qualità deve essere:
 * Corretto
@@ -65,7 +65,7 @@ Esiste un modo per riuscire a comparare diverse soluzioni di modularizzazione, o
 Secondo questo metodo di valutazione, **la Programmazione orientata agli Agenti**, è la migliore, in quanto è l'unica che modella gli agenti e l'ambiente e che mette entrambi allo stesso piano.
 
 
-## Architetture ad Agente
+# Architetture ad Agente
 
 Le architetture più conosciute che si basano sugli agenti sono:
 
@@ -82,3 +82,5 @@ Entrambi i problemi non sono facilmente risolvibili, le uniche soluzioni che pos
 * Impostare il programma in modo tale che il maggior numero di decisioni vengano trattate durante la fase di programmazione e non durante la fase di esecuzione, così da andare a velocizzare i processi dell'agente.
 * **Reactive Agents Movements**
 * **Architetture ibride**
+
+➡ [[2 - Agenti Razionali]]

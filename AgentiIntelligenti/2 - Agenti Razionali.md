@@ -1,5 +1,6 @@
 📚 Subject: [[AgentiIntelligenti]] 
-## Agenti Razionali
+⬅ [[1 - Introduzione agli agenti intelligenti]]
+# Agenti Razionali
 
 Gli **agenti intenzionali** sono sistemi che individuano un insieme di **task** che devono essere portate a termine basandosi su un’insieme di **credenze**, questo insieme rappresenta le **intenzioni** del sistema.
 
@@ -60,3 +61,5 @@ La versione **Open-minded**, invece, risulta essere la migliore perché continue
 
 La versione migliorata dell’algoritmo di partenza è quindi una che utilizza l’open-minded commitment ma con un controllo sulla necessità di cambiare piano una volta scelto.
 **![Photo | center | 600](https://lh7-us.googleusercontent.com/9H3i3R_YL-X40L-XcP3GHdohjVKW8JvtCsVLS8r-e9_8eJ6ujkKuL9kq10aflQmpsByv2h9tbe6FvvISn94EpcHRWa2IwJ5cA9GimvTl4hUPv88BFNVwbOuYAh8YQTrE_ZrIf9qfMBAV1jdKnhFrwTY)**
+
+➡ [[3 - Linguaggi e architetture per agenti]]
