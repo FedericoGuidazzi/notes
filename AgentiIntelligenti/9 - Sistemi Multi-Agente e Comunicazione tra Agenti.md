@@ -196,5 +196,57 @@ Tra i possibili stati troviamo:
 - **Detach**, ovvero l'agente creditore ha terminato le sue azioni (Alice ha pagato i $12)
 - **Discharge**, ovvero l'agente debitore ha terminato le sue azioni (Libreria ha dato il libro)
 
+## Protocolli di Interazione
+
+La comunicazione degli agenti è molto importante, come abbiamo visto in precedenza, sono quindi necessari dei **protocolli di interazione**.
+
+Questi protocolli sono necessari sia per formalizzare la **forma** della comunicazione, sia il **contenuto** di questa.
+
+Nella normalità i protocolli vengono disegnati come automi a stati finiti, ovvero con una struttura rigida che guida dall'inizio alla fine della conversazione.
+Un esempio di questa tipologia sono le specifiche *FIPA*, e il protocollo più conosciuto ed usato per la realizzazione di sistemi cooperanti è **Contract Net Protocol**.
+
+### Contract Net Protocol
+
+Questo protocollo è stato ideato e utilizzato per lo scambio di merci e servizi.
+
+Vengono individuati 2 attori:
+- *Manager*
+- *Contractor*
+
+Il **Manager** ha i compiti di:
+- Annunciare un task che deve essere risolto
+- Ricevere e valutare le candidature dei Contractors
+- Scegliere e informare un Contractor
+- Ricevere il risultato
+
+Il **Contractor** ha i compiti di:
+- Ricevere gli annunci dal Manager
+- Valutare il task
+- Rispondere al Manager, declinando o facendo una proposta
+- Eseguire il task se la proposta è stata accettata dal Manager
+- Riportare il risultato
+
+![[Pasted image 20240418114429.png]]
+
+## Protocolli a Commitment
+
+Secondo Singh, i protocolli possono essere semplificati come un'insieme di commitment che gli agenti fanno.
+
+L'utilizzo di questo tipo di protocolli permette l'abolizione di una struttura prefissata di azioni che devono essere eseguite per svolgere l'interazione, questo perché
+
+ - [9] L'unico vincolo che deve essere soddisfatto in questo tipo di protocolli per dirsi conclusa l'interazione tra agenti è che tutti i commitment siano discharged.
+
+Un esempio di questi protocolli è **The Net Bill Protocol**, nel quale si vuole modellare l'acquisto di un bene da parte di un'agente.
+
+### The Net Bill Protocol
+
+Per portare a termine il goal (l'acquisto di un bene) ci possono essere moltissimi modi.
+
+Per esempio un'agente può prima chiedere informazioni di un'oggetto e l'altro agente fornire le informazioni e il prodotto, oppure può anche succedere che l'agente si rechi direttamente dall'altro agente con già il prodotto che vuole comprare, andando così a **modificare** l'ordine degli eventi.
+
+Questa modifica porterebbe alla **creazione di un gran numero di scenari** diversi che andrebbero **modellati nei minimi particolari** se si vuole utilizzare i **protocolli a stati finiti**, con i **protocolli a commitment**, invece, le **azioni** possono essere **svolte** in un **qualsiasi ordine**, l'importante è che **tutti i commitment** vengano **discharged** durante l'interazione.
+
+Una possibile run del protocollo potrebbe essere:
+![[Pasted image 20240418115809.png]]
 
 ➡ [[]]
