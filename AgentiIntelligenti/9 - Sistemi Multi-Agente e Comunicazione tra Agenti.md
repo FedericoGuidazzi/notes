@@ -238,6 +238,8 @@ L'utilizzo di questo tipo di protocolli permette l'abolizione di una struttura p
 
 Un esempio di questi protocolli è **The Net Bill Protocol**, nel quale si vuole modellare l'acquisto di un bene da parte di un'agente.
 
+Un **contro** di questi protocolli deriva dalla loro "libertà", infatti, non essendoci una serie di azioni da eseguire, **possono verificarsi casi in cui viene rilassato un commitment da parte di un agente, mentre non viene fatto dall'altro**, portando così a problemi di **disallineamento**.
+Un esempio può essere l'ordine di una merce, un agente fa l'ordine e subito dopo lo annulla, all'altro agente arriva prima l'annullamento dell'ordine e successivamente la richiesta dell'ordine, l'annullamento lo porta a non fare nessuna azione, dato che non aveva ordini aperti, mentre la richiesta dell'ordine lo porta a iniziare i suoi processi per l'accettazione dell'ordine. Possiamo quindi vedere come un agente non abbia nessun commitment riguardo all'ordine, mentre il secondo lo abbia, portando così ad un disallineamento tra i due.
 ### The Net Bill Protocol
 
 Per portare a termine il goal (l'acquisto di un bene) ci possono essere moltissimi modi.
@@ -248,5 +250,14 @@ Questa modifica porterebbe alla **creazione di un gran numero di scenari** diver
 
 Una possibile run del protocollo potrebbe essere:
 ![[Pasted image 20240418115809.png]]
+Come questo esempio ce ne potrebbero essere molti altri (per esempio tutti gli scenari con le stesse azioni ma invertite di posizione).
+
+Per dirsi **completa**, una run, non deve avere più commitment aperti, **nel caso non si riescano a chiudere eventuali commitment aperti la run fallisce**.
+
+## Modelli a coordinazione
+
+In questi modelli è presente una "**blackboard**", in cui tutte le **componenti del sistema** vanno ad **aggiornare gli stati** dei processi comuni, così da **non incorrere in problemi dovuti alla modifica concorrente delle stesse risorse**, questo aggiornamento accompagna l'attività dall'inizio alla fine e ogni agente aggiorna lo stato quando il suo stato interno coincide con lo stato attuale nella blackboard.
+
+I processi in questo tipo di modello vengono gestiti attraverso *norme* e *leggi sociali*.
 
 ➡ [[]]
