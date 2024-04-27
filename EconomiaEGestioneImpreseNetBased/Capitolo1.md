@@ -33,6 +33,4 @@ Come tutte le innovazioni però ha anche lati negativi che devono essere gestiti
 - aumento di forme di capitalismo, questo perche la tecnologia è in mano a poche aziende grandi al momento
 - aumento della disuguaglianza sociale, questo perche solo in pochi al momento sanno utilizzare la tecnologia e questo garantisce un vantaggio scorretto verso gli altri soggetti.
 
-
-
-➡ [[]]
+➡ [[Capitolo2]]
