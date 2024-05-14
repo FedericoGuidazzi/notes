@@ -260,4 +260,4 @@ In questi modelli è presente una "**blackboard**", in cui tutte le **componenti
 
 I processi in questo tipo di modello vengono gestiti attraverso *norme* e *leggi sociali*.
 
-➡ [[]]
+➡ [[10 - Robustezza e Agent-based Modeling]]

@@ -43,4 +43,4 @@ L'AI quindi assume un ruolo molto importante nello sviluppo di un'impressa, ma d
 Può essere di aiuto la figura del **AI knowledge Broker**, ovvero una figura tecnica, che conosce la tecnologia AI che può affiancare lo sviluppo dell'azienda andando a facilitare l'inserimento della tecnologia e favorire la sua accettazione.
 
 Risulta necessario, però, che tutte le imprese affrontino la sfida dello saper cogliere le opportunità e fronteggiare le criticità che l'AI potrebbe portare, in modo tale da garantire la continuità dell'impresa.
-➡ [[]]
+➡ [[Capitolo5]]
