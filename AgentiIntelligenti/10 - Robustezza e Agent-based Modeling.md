@@ -23,4 +23,4 @@ Le unità che compongono il sistema hanno le seguenti caratteristiche:
 - Sono in grado di *pianificare*, ovvero cercano di modificare l'ambiente in modo che il raggiungimento degli obiettivi risulti più semplice
 
 
-➡ [[]]
+➡ [[11 - Modellare Tempo e Azioni]]
