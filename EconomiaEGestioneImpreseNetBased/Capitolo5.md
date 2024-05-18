@@ -30,4 +30,4 @@ Lo scopo dell'AI in questo tipo di società è quello di individuare i processi 
 Negli ultimi anni è anche nata l'idea delle Super Smart Society, o Society 5.0, che consiste nel individuare i principi primari e le leggi più adatte a regolamentare sistemi sociali ibridi, così da raggiungere una dimensione globale di welfare umano e di benessere personale.
 
 
-➡ [[]]
+➡ [[Capitolo6]]
