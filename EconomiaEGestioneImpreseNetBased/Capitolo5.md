@@ -1,5 +1,5 @@
 📚 Subject: [[EconomiaEGestioneImpreseNetBased]]
-⬅ [[Capitolo3]]
+⬅ [[Capitolo4]]
 
 # Dal Management d'impresa al management dell'ecosistema: il ruolo dell'AI
 
