@@ -43,4 +43,4 @@ In questo momento l'AI sta rivoluzionando le strategie di marketing, e questa pe
 
 Il futuro del marketing e della customer experience però non è solo AI ma anche nuove tecnologie come la *VR* e *AR* che permettono una esperienza ancora più immersiva e personalizzata, andando a espandere e rendere più forti tutti i touching point.
 
-➡ [[]]
+➡ [[Capitolo8]]
