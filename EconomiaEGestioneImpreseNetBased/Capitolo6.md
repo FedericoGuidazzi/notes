@@ -11,7 +11,7 @@ L'economia e quindi il management lineare è il modello di economia che è più 
 
 Questo tipo di economia però ha vari **aspetti negativi** che riguardano soprattutto il fatto che questo approccio non è **sostenibile in termini ecologici**, questo perché le aziende partono sempre da delle *materie prime vergini* per creare nuovi prodotti e gli *scarti rimangono tali*, andando a originare tantissimi rifiuti e utilizzo di energia.
 
-La nuova forma di economia circolare, invece, cerca di risolvere i problemi andando a riutilizzare i materiali che risulterebbero essere rifiuti, andando ad andare ad innescare un ciclo di riutilizzo delle materie prime che favorisce l'abbassamento della produzione di rifiuti.
+La nuova forma di economia circolare, invece, cerca di risolvere i problemi andando a riutilizzare i materiali che risulterebbero essere rifiuti, andando ad innescare un ciclo di riutilizzo delle materie prime che favorisce l'abbassamento della produzione di rifiuti.
 
 I principi cardine di questa nuova economia sono:
 - Preservare e valorizzare il capitale naturale

@@ -24,9 +24,9 @@ Per riuscire ad arrivare alla conclusione di un processo devono avverarsi due co
 
 In generale quindi:
 
-1. Gli agenti devono trovare un **insieme di passi **per riuscire ad arrivare ad una **conclusione** del processo
+1. Gli agenti devono trovare un **insieme di passi per riuscire ad arrivare ad una conclusione** del processo
 2. Le intenzioni devono essere utilizzate come **filtro** per non sceglierne di **contrastanti**
-3. Gli agenti **monitorano il successo delle intenzioni** e devono poter** tornare sui loro passi in caso di cambio delle condizioni**
+3. Gli agenti **monitorano il successo delle intenzioni** e devono poter **tornare sui loro passi in caso di cambio delle condizioni**
 4. Gli agenti credono che le loro **intenzioni siano possibili**
 5. Gli agenti **non credono** che **non realizzeranno** le proprie intenzioni
 6. Nelle circostanze di base, gli agenti **credono** che **realizzeranno** le proprie intenzioni
@@ -34,7 +34,7 @@ In generale quindi:
 
 Un agente deve quindi essere in grado di analizzare l’ambiente che lo circonda e prendere una decisione sul processo da svolgere.
 
-Come ogni cosa, però, questa decisione comporta una spesa di **tempo**, che può determinare la scelta come **non più rilevante**, questo perché l’ambiente è cambiato, sfortunatamente non ci sono soluzioni a questo problema (_calculative rationality_), l’unica cosa che si può fare è far sì che l’agente sia e**lastico nelle decisioni**, quindi in caso di cambiamento dell’ambiente la decisione verrà **aggiornata** andando a individuare quella migliore.
+Come ogni cosa, però, questa decisione comporta una spesa di **tempo**, che può determinare la scelta come **non più rilevante**, questo perché l’ambiente è cambiato, sfortunatamente non ci sono soluzioni a questo problema (_calculative rationality_), l’unica cosa che si può fare è far sì che l’agente sia **elastico nelle decisioni**, quindi in caso di cambiamento dell’ambiente la decisione verrà **aggiornata** andando a individuare quella migliore.
 
 Le uniche circostanze dove questo problema non sussiste sono:
 

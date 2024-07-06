@@ -29,7 +29,7 @@ Gli attori coinvolti nella tecnologia AI sono molteplici:
 
 ## Innovare l'intelligenza artificiale
 
-Un altro aspetto molto interessante dell'AI è quello legato al managment, infatti questa tecnologia potrà essere affiancata a figure manageriali per prendere decisioni più consapevoli, basandosi su scelte corrette del passato o prese in situazioni simili.
+Un altro aspetto molto interessante dell'AI è quello legato al management, infatti questa tecnologia potrà essere affiancata a figure manageriali per prendere decisioni più consapevoli, basandosi su scelte corrette del passato o prese in situazioni simili.
 
 Un importante considerazione è quella che l'AI deve essere utilizzata e resa accessibile dal pubblico main stream, quindi è necessario un concetto di quadrupla elica, e non più di tripla elica, questo perché è necessario che anche la società abbia una posizione in prima linea per lo sviluppo e la regolamentazione della tecnologia.
 I componenti della quadrupla elica, sono:

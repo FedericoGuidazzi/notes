@@ -13,12 +13,12 @@ Sarà importante avere una visione ampia e cercare di governare al meglio la tec
 Questo aspetto diventa ancora più importante se invece di considerare solo l' intelligenza artificiale si considerano anche le altre tecnologie che fanno parte delle "aumentate".
 
 ## Perché va gestita?
-L' introduzione delle novità che l'AI porta, hanno il potenziale di cambiare anche gli aspetti legati al managment che sono già in cambiamento con la digital transformation.
-Il compito del managment quindi deve considerare anche:
+L' introduzione delle novità che l'AI porta, hanno il potenziale di cambiare anche gli aspetti legati al management che sono già in cambiamento con la digital transformation.
+Il compito del management quindi deve considerare anche:
 - Non è più sufficiente selezionare le risorse solo in base alle loro conoscenze, ma è anche necessario tenere in considerazione le **capacità di apprendimento e adattamento**, andando anche a pensare a nuovi modelli di formazione.
 - Le organizzazione **perderanno** la loro **struttura piramidale**, andando a preferire strutture più fluide.
 - I **contesti applicativi diventeranno più aperti**, andando a perdere la distinzione tra i prodotti interni ed esterni (maggiore apertura a collaborazioni, utilizzo di risorse open-source invece che preferire il rifarsi tutto in casa come è ora)
-Oltre a questo sarà anche necessario tenere in considerazione le innovazioni che le intelligenze artificiali possono portare, inserendo in sistema manageriale un team che si occupa di questi argomenti.
+Oltre a questo sarà anche necessario tenere in considerazione le innovazioni che le intelligenze artificiali possono portare, inserendo nel sistema manageriale un team che si occupa di questi argomenti.
 
 ## L'intelligenza artificiale salverà il mondo?
 

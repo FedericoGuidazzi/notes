@@ -23,7 +23,7 @@ I **belief**, sono indicati da un nome (scritto con l'iniziale in minuscolo) seg
 Dove X,Y sono variabili (i cui nomi hanno sempre la prima lettera scritta in caps), mentre robot è una "costante" che indica l'agente in se in questo caso.
 ## Goal
 
-Un goal è uno stato che l'agente vuole raggiungere. \
+Un goal è uno stato che l'agente vuole raggiungere.
 Esistono 2 tipi di gol:
 
 * **Achievement goal** (!g(t)), è indicato da un ! che precede il nome e i parametri del goal, rappresenta il fatto che l'**agente vuole raggiungere** uno **stato** dove **g(t)** è ritenuto **vero**.

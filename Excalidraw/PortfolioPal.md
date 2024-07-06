@@ -693,8 +693,8 @@ di condivisione o no del portfolio ^m0kYV3tO
 		},
 		{
 			"type": "rectangle",
-			"version": 172,
-			"versionNonce": 1204786576,
+			"version": 173,
+			"versionNonce": 1378503329,
 			"index": "aK",
 			"isDeleted": false,
 			"id": "lwd67Q_EFcg-ejaAn4TjP",
@@ -724,13 +724,9 @@ di condivisione o no del portfolio ^m0kYV3tO
 				{
 					"id": "ZUCojJoOxOXOO0HLJvzuN",
 					"type": "arrow"
-				},
-				{
-					"id": "bPKkWr7DsLfaOXPF-H0Eh",
-					"type": "arrow"
 				}
 			],
-			"updated": 1716116221536,
+			"updated": 1716986458207,
 			"link": null,
 			"locked": false
 		},
@@ -957,8 +953,8 @@ di condivisione o no del portfolio ^m0kYV3tO
 		},
 		{
 			"type": "line",
-			"version": 457,
-			"versionNonce": 248138608,
+			"version": 531,
+			"versionNonce": 1330429217,
 			"index": "aS",
 			"isDeleted": false,
 			"id": "bPKkWr7DsLfaOXPF-H0Eh",
@@ -968,8 +964,8 @@ di condivisione o no del portfolio ^m0kYV3tO
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -155.75,
-			"y": -309.2578125,
+			"x": -158.60714285714283,
+			"y": -313.5435267857142,
 			"strokeColor": "#f08c00",
 			"backgroundColor": "transparent",
 			"width": 11,
@@ -981,15 +977,11 @@ di condivisione o no del portfolio ^m0kYV3tO
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1716116221536,
+			"updated": 1716986466891,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
-			"endBinding": {
-				"elementId": "lwd67Q_EFcg-ejaAn4TjP",
-				"focus": -0.09838235902527753,
-				"gap": 7.666666666666629
-			},
+			"endBinding": null,
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": null,
@@ -2029,32 +2021,37 @@ di condivisione o no del portfolio ^m0kYV3tO
 			]
 		},
 		{
-			"id": "23BE7CRzezibUeCIwmdMr",
 			"type": "line",
-			"x": 436.5853217514691,
-			"y": -290.8553875203547,
-			"width": 26.68125088957686,
-			"height": 1.0262019572913914,
-			"angle": 0,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
+			"version": 21,
+			"versionNonce": 1947037847,
+			"index": "ay",
+			"isDeleted": false,
+			"id": "23BE7CRzezibUeCIwmdMr",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "dashed",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": 436.5853217514691,
+			"y": -290.8553875203547,
+			"strokeColor": "#f08c00",
+			"backgroundColor": "transparent",
+			"width": 26.68125088957686,
+			"height": 1.0262019572913914,
+			"seed": 467134263,
 			"groupIds": [],
 			"frameId": null,
-			"index": "ay",
 			"roundness": null,
-			"seed": 467134263,
-			"version": 21,
-			"versionNonce": 1947037847,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1716543913755,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -2064,12 +2061,7 @@ di condivisione o no del portfolio ^m0kYV3tO
 					-26.68125088957686,
 					1.0262019572913914
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		}
 	],
 	"appState": {
@@ -2087,10 +2079,10 @@ di condivisione o no del portfolio ^m0kYV3tO
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 627.586107959726,
-		"scrollY": 502.7500572954488,
+		"scrollX": 497.1874628256536,
+		"scrollY": 396.38012995606374,
 		"zoom": {
-			"value": 0.974467055821477
+			"value": 1.4000000000000001
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": null,
