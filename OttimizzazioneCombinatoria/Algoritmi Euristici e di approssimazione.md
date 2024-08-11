@@ -9,8 +9,8 @@ Nel caso, quindi, che una soluzione sub-ottima possa comunque essere accettabile
 L'algoritmo del knapsack approssimato è un'evoluzione del knapsack greedy che, in base al livello di accuratezza della soluzione richiesta, può essere più o meno efficiente in modo arbitrario, infatti, modificando l'errore relativo massimo accettabile, l'algoritmo si modifica fornendo soluzioni più o meno vicini all'ottimo (ovviamente più mi avvicino a un errore relativo basso più il tempo computazionale aumenta).
 Questo algoritmo ha una complessità esponenziale $$O(n^3\frac{1}{\epsilon})$$
 Quindi è un algoritmo di $\epsilon$-approssimazione per knapsack.
-## TSP Simmetrico (Commesso viaggiatore)
-Il problema del TSP simmetrico è un problema NP completo che consiste nell'individuare un ciclo hamiltoniano nel grafo di partenza.
+## TSP Metrico (Commesso viaggiatore)
+Il problema del TSP metrico è un problema NP completo che consiste nell'individuare un ciclo hamiltoniano nel grafo di partenza.
 Un ciclo hamiltoniano è un ciclo in cui tutti i nodi sono visitati una e una sola volta, fatta eccezione del nodo di partenza che funge sia da partenza che da arrivo.
 L'algoritmo TSP viene risolto da due algoritmi:
 - Double spanning tree, questo algoritmo consiste nella duplicazione di tutti i rami per poi andare a individuare il ciclo hamiltoniano, questo algoritmo è di 1-approssimazione
