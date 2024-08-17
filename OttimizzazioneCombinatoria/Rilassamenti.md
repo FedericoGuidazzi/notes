@@ -1,37 +1,40 @@
-Rilassamento continuo:
-	Per ottenerlo basta rimuovere il vincolo di integralità delle variabili.
-	Il rilassamento che si ottiene risulta mediamente non una buona soluzione del problema, infatti si può sbagliare fino al 100% delle volte, ma può dare informazioni molto utili per quanto riguarda l'upper bound possibile della soluzione, oltre a garantire una soluzione del primale e del duale ottime.
-	
-Eliminazione dei vincoli:
-	Questo rilassamento parte dalla riscrittura del problema iniziale nella forma
-	$max\{ cx : Ax ≤ b , Ex ≤ d , x ∈ Zn \}$
-	Ovvero vengono separati i vincoli semplici (Ex) da quelli più complessi (Ax).
-	Una volta individuati i vincoli complessi vengono semplicemente rimossi, andando a creare un rilassamento del tipo
-	$max\{ cx : Ex ≤ d , x ∈ Zn \}$
-	Il rilassamento ottenuto risulta migliore in termini di difficoltà di risoluzione ma non è detto che la soluzione sia polinomiale.
-	
-Rilassamento Lagrangiano:
-	In questo rilassamento viene aggiunta una costante che ha il compito di penalizzare le soluzioni che non rispettano i vincoli posti dalla condizione complessa nel problema (Ax).
-	Nel rilassamento in questione, i vincoli difficili vengono inseriti nella funzione obiettivo moltiplicati per un coefficiente u.
-	Per esempio:
-		$min X \sum_{(i,j)∈A} cijxij$
-		$t.c. \sum_{(j,i)∈BS(i)} xji − \sum_{(i,j)∈F S(i)} xij = bi , i ∈ N,$
-		$\sum_{(i,j)∈A} lijxij ≤ L,$
-		$xij ∈ \{0, 1\}, ∀(i, j) ∈ A,$
-
-Si ottiene un rilassamento del tipo
-	$min X \sum_{(i,j)∈A} cijxij + u(L-\sum_{(i,j)∈A} lijxij) = uL+\sum_{(i,j)∈A}(cij-ulij)xij$
-		$t.c. \sum_{(j,i)∈BS(i)} xji − \sum_{(i,j)∈F S(i)} xij = bi , i ∈ N,$
-		$xij ∈ \{0, 1\}, ∀(i, j) ∈ A,$
-
-Solitamente la soluzione fornita dal rilassamento Lagrangiano risulta essere più efficace ma meno efficiente dei rilassamenti precedenti.
-
-Rilassamento Surrogato:
-Questo rilassamento prevede di semplificare tutti i vincoli complessi in un solo vincolo moltiplicato per un vettore y.
-Il rilassamento ottenuto non sempre risulta più semplice, infatti, molte volte anche il problema rilassato risulta molto complesso da risolvere.
-Solitamente il problema surrogato non viene molto utilizzato in quanto il suo rilassamento può rimanere comunque difficile da risolvere, di conseguenza viene preferito il rilassamento lagrangiano.
-La riformulazione del problema secondo questo rilassamento diventa:
-$max\{ cx : (yA)x ≤ (yb) , Ex ≤ d , x ∈ Zn \} .$
-
-Decomposizione di Bender:
-Questa decomposizione viene fatta sulle variabili e non sulla matrice dei coefficienti, 
+# Rilassamenti
+Uno dei punti fondamentali per riuscire a risolvere un problema di OC è individuare un upper bound in grado di guidarci nel successivo raffinamento della soluzione e di stimare la bontà di una soluzione.
+Un rilassamento di un problema consiste nel rimuovere dei vincoli per far si che sia possibile trovare più facilmente una soluzione, fornendo una soluzione che però molto spesso risulta non del tutto compatibile con il problema iniziale, fornisce comunque delle informazioni molto importanti per poi riuscire e guidare la soluzione verso una accettabile.
+Esistono vari tipi di rilassamenti:
+- Rilassamento continuo
+- Rilassamento per eliminazione di vincoli (o combinatorio)
+- Rilassamento Lagrangiano
+- Rilassamento surrogato
+I rilassamenti si basano tutti su un trade-off tra efficacia ed efficienza:
+- **Efficacia**, qualità della soluzione prodotta (in un mondo ideale vorremmo che la soluzione data dal rilassamento sia la stessa che otterrei senza)
+- **Efficienza**, tempo necessario per ottenere la soluzione
+Per ogni istanza dobbiamo valutare quale delle due caratteristiche risulta quella più importante così da decidere che approccio prendere (preferire una risoluzione veloce a scapito della qualità della soluzione oppure preferire la qualità della soluzione aspettando molto tempo per ottenerla?)
+## Rilassamento continuo
+Il rilassamento continuo è un rilassamento che lavora sull'eliminazione del vincolo di continuità andando ad accettare anche soluzione non intere, ovvero, dato un problema del tipo: $$P=max(cx:Ax\le b, x \in \mathbb{Z}^n_+)$$
+Lo vado a rilassare, trasformandolo in un problema del tipo: $$P=max(cx:Ax\le b, x \ge 0)$$
+La soluzione una volta ottenuto il rilassamento è molto *efficiente* e semplice da ottenere ma molto spesso l'*efficacia è pessima*.
+Molto spesso la soluzione ottenuta con questo rilassamento risulta essere quasi inutilizzabile in quanto il vincolo sull'interezza è molto importante, quello che otteniamo però con la soluzione di questo rilassamento è una soluzione ottima del problema primale e del problema duale, utilizzando queste soluzioni ottime come guide per dei metodi di arrotondamento posso ottenere delle soluzioni più buone rispetto a quella di partenza.
+## Rilassamento per eliminazione di vincoli
+Questa tipologia di rilassamento semplifica il problema iniziale andando a studiare i vincoli presenti, individuando quelli semplici, che permetterebbero di risolvere il problema in modo molto efficiente, e quelli difficili che non rendono possibile l'applicazione degli algoritmi di risoluzione classici.
+La formulazione del problema diventa quindi la seguente: $$max\{ cx : Ax ≤ b , Ex ≤ d , x ∈ \mathbb{Z}^n \}$$
+Dove i vincoli $Ax ≤ b$ sono quelli complicati, mentre i vincoli $Ex ≤ d$ sono quelli ritenuti semplici.
+Il rilassamento quindi elimina i rilassamenti complessi, mantenendo unicamente quelli ritenuti semplici, ottenendo una nuova formulazione del tipo: $$max\{ cx :  Ex ≤ d , x ∈ \mathbb{Z}^n \}$$
+## Rilassamento Lagrangiano
+Il rilassamento Lagrangiano è un rilassamento che mette in funzione obiettivo i vincoli complessi moltiplicati per un coefficiente. Questo serve per poter permettere che i vincoli non siano rispettati, ma quando questo avviene viene data una penalità.
+Partendo da un problema della forma $$max\{ cx : Ax ≤ b , Ex ≤ d , x ∈ \mathbb{Z}^n \}$$
+Il rilassamento Lagrangiano lo trasforma in $$max\{ cx + u(b-Ax) : Ex ≤ d , x ∈ \mathbb{Z}^n \}$$
+Come si può notare, quindi, è stata rotta la prima disequazione portando a sinistra tutte le variabili e moltiplicandole per uno scalare $u$, è da tenere in considerazione che se la disequazione cambia di segno anche lo scalare lo deve fare per mantenere delle soluzioni ammissibili.
+## Rilassamento surrogato
+Questa tipologia di rilassamento lavora sui vincoli complessi andandoli a raggruppare in un solo vincolo attraverso dei moltiplicatori $u$.
+In problema di partenza $$max\{ cx : Ax ≤ b , Ex ≤ d , x ∈ \mathbb{Z}^n \}$$
+Viene riformulato come $$max\{ cx : (uA)x ≤ (ub) , Ex ≤ d , x ∈ \mathbb{Z}^n \}$$
+Questo rilassamento quindi agisce sui vincoli complessi andandoli a riunire in un solo vincolo che però molte volte continua ad essere complesso, in queste situazioni non ho un grande vantaggio nell'utilizzo di questo rilassamento, proprio per questo non trova molta applicazione nella pratica in confronto al rilassamento Lagrangiano visto prima
+## Scomposizione di Bender
+La scomposizione di Bender è un altro approccio per riuscire a semplificare un problema a cui non riusciamo a dare una soluzione a causa della grande complessità.
+A differenza dei rilassamenti visti fino ad ora, questa scomposizione, agisce direttamente sulle variabili ritenute complesse piuttosto che sui vincoli.
+Il funzionamento di questo approccio si basa sull'individuazione di un problema master e uno slave.
+Il master serve per trovare una soluzione attraverso l'eliminazione di vincoli, cercando di mantenere solo quelli che hanno una risoluzione immediata.
+Il problema slave invece sarà quello formato da tutti i vincoli che erano stati scartati dal problema master e verrà risolto utilizzando il duale.
+Successivamente, in base al risultato ottenuto applico dei tagli e ripeto gli step precedenti fino ad arrivare ad avere la soluzione ottima del problema di partenza.
+![[Pasted image 20240817161411.png]]
