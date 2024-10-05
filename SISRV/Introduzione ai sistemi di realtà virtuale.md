@@ -51,6 +51,55 @@ Questi componenti sono sia Hardware che Software.
   - Haptic computation, computazione del feedback da fornire all'utente derivante dalla computazione della simulazione
   - Audio display, strumento con il quale viene fornita la computazione audio all'utente (sistema audio immersivo, cuffie)
   - Haptic display, strumento con il quale viene fornito un feedback aptico all'utente (tuta aptica, sistema di vibrazione)
+La computazione viene eseguita su un motore di computazione che prendendo tutti gli input restituisce lo stato della simulazione, ovvero audio, video e feedback in caso di accessori di output dedicati.
+La computazione può essere eseguita su uno o più computer a causa della complessità computazionale richiesta per ottenere dei risultati in un arco di tempo abbastanza breve per riuscire a gestire a meglio la latenza.
+### Head Mounted Display (HMD)
+È l'accessorio più diffuso e la prima cosa che viene in mente quando si parla di VR, coinsiste in un elmetto che permette la visione del mondo virtuale attraverso uno schermo.
+Questo dispositivo può permettere la realtà virtuale o, in alcuni casi, la realtà aumentata.
+Inoltre, solitamente, ha delle cuffie integrate direttamente nel visore e dei sensori che vengono utilizzati per il traking.
+#### Pro
+I pro di questa soluzione sono:
+- Buon senso di immersione
+- L'utente può muoversi in grandi spazi (ha libertà di movimento, anche se non totale)
+- Costa poco
+- È facile da installare e utilizzare
+#### Contro
+I contro sono:
+- È invasivo
+- Distorsione dell'immagine soprattutto nella parte di visione periferica
+- La latenza e il completo distaccamento dal mondo possono portare a dei problemi di nausea
+### HUD Display
+È un display trasparente che permette la visualizzazione di informazioni, soprattutto testuali, senza perdere il contatto con l'ambiente circondante.
+Questi dispositivi sono utilizzati soprattutto in ambito automotive per poter dare informazioni alla guida.
+### Large Screen Stationary Display
+CAVE ne è un esempio, sono dei grandi schermi su cui viene proiettato il mondo virtuale.
+Permettono un senso di immersione grazie alla proiezione su tutto il campo visivo e grazie al tracking continuo dell'utente nello spazio che permette di aggiornare le proiezioni sugli schermi.
+Un altro punto a favore di questa tecnologia è il fatto che l'utente non debba indossare nessun tipo di accessori per immergersi nell'esperienza virtuale.
+### Binocular Omni-Orientation Monitor (BOOM)
+Consiste in un visore montato su un braccio meccanico.
+Grazie al fatto che il tutto è collegato ad un braccio, il tracking avviene in real time e si possono utilizzare feedback tattili, come l'indurimento delle giunzioni del braccio.
+Ha il contro, però, di essere fisso in un punto, di essere molto più costoso di un semplice visore e solitamente, il livello di immersione risulta essere minore rispetto alle altre tecnologie.
+### Strumenti aptici
+Gli strumenti aptici permettono di dare dei feedback tattili all'utente che sta utilizzando il sistema.
+Il feedback può essere dato da impulsi elettrici/contatto sulla pelle, o in alcuni casi, direttamente a livello muscolare/scheletrico.
+Gli strumenti aptici possono essere:
+- fissi, come il braccio robotico nella tecnologia BOOM
+- stazionari, come i guanti/tute che permettono di dare delle sensazioni tattili agli utenti
+## Dispositivi di input e di tracking
+Il tracking dell'utente e la possibilità che questo ha di interagire con l'ambiente virtuali sono necessari per la c*reazione di una esperienza sufficiente all'interno della simulazione*.
+Non esiste, per il momento, un dispositivo che riesca a dare dei risultati ottimi sotto tutti i punti di vista, è quindi necessario scegliere accuratamente i dispositivi in base all'utilizzo che si vuole fare della VR.
+Per esempio se si deve sviluppare un'applicazione molto sensibile e accurata, sarà necessario utilizzare sistemi cablati piuttosto che senza cavi, andando così a peggiorare il comfort dell'utente ma andando a migliorare la qualità dell'input.
+I sistemi di tracking più diffusi sono:
+- Elettromagnetici
+- Meccanici
+- Ottici
+- Giroscopici e inerziali
+- Tracking muscolare e neuronale
+## Software per la Realtà Virtuale
+I software necessari per applicazioni in realtà virtuale sono:
+- **Motore fisico,** necessario per simulare le leggi della natura
+- **Librerie di Rendering**, convertono il mondo generato dal computer in un mondo familiare all'utente, andando a migliorare la user experience
+- **Librerie VR**, permettono di creare output in linea con quelle che sono le azioni dell'utente e la sua posizione, andando ad interfacciarsi con il sistema di tracking ed eventuali ulteriori dispositivi di input
 
 
 
