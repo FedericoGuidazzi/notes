@@ -11,7 +11,7 @@ Il comportamento di un sistema può essere descritto da un **Transition System**
 
 - [9] Un Transition System consiste in un insieme di stati, un insieme di transizioni fra gli stati e una funzione che associa ad ogni stato un insieme di proposizioni. 
 
-![[Pasted image 20240517114354.png]]
+![[Pasted image 20240517114354 1.png]]
 Gli stati sono rappresentati dai nodi, le transizioni dalle frecce di collegamento dei nodi e l'insieme di proposizioni si trovano all'interno del nodo.
 
 Attraverso il Transition System individuato possiamo fare model checking, ovvero vogliamo verificare che *per ogni modello φ* (descritto in LTL) *esiste un cammino infinito π appartenente al Transition System*.
