@@ -126,3 +126,84 @@ Per esempio, nella figura, viene inserito il vincolo di unicità per andare a sp
 Lo stesso concetto sarebbe anche specificato dalla forma
 ![[Pasted image 20241227130754.png]]
 che però risulta **non** essere la minima in quanto la relazione può essere splittata come visto precedentemente.
+
+## Step 5
+Lo step 5 è pensato per individuare ulteriori vincoli e controllare se sono presenti derivazioni logiche delle relazioni presenti nel diagramma.
+I vincoli che vado a cercare non sono più del tipo al più uno, come nello step 4, ma vado a cercare vincoli del tipo almeno 1.
+
+Il nuovo vincolo viene inserito specificando un simbolo nei collegamenti tra entità e relazione, se è presente il simbolo significa che tutti le istanze dell'entità parteciperanno alla relazione, se il simbolo non è indicato questo non è vero.
+![[Pasted image 20241227163220.png]]
+Nell'immagine sto inserendo il vincolo che tutti i gruppi di tutoraggio fanno parte di un solo programma, in quanto è presente il pallino che indica che tutte le istanze dell'entità partecipano alla relazione ed inoltre essendo che dato un gruppo di tutoraggio identifico anche il programma, posso dire con certezza che un gruppo di tutoraggio fa parte di un solo programma.
+
+### Vincoli di disgiunzione obbligatoria
+Oltre questo posso anche inserire dei vincoli di disgiunzione obbligatoria, che si indicano con il simbolo in figura
+![[Pasted image 20241227163513.png]]
+Quello che indica è che le relazione contraddistinte da quel simbolo sommate tra loro danno la popolazione totale dell'entità.
+In generale anche senza l'inserimento di questo simbolo si può ottenere lo stesso risultato, in quanto la somma delle relazioni a cui partecipa un'entità di per se segna la popolazione dell'entità.
+Il simbolo è stato introdotto per dare una forza maggiore di significato al concetto di somma di popolazione, andando a mettere in chiaro che la condizione è li per delle specifiche e quindi modifiche future non devono andare ad aggiungere relazioni per quell'entità, a meno che i requisiti non siano stati modificati.
+
+### Schema di referenza
+Abbiamo già visto lo schema di referenza base, in cui all'interno di una entità inserivo l'identificatore che volevo utilizzare.
+Con i nuovi vincoli appena introdotti, posso formulare un nuovo schema di referenza, utile in caso l'entità che sto descrivendo possa avere più identificatori, che prendono il nome di **sinonimi**, in quanto entrambi gli attributi potrebbero essere utilizzati per identificare univocamente l'entità.
+![[Pasted image 20241227164306.png]]
+I due schemi hanno esattamente lo stesso significato, hanno solo un formato diverso per mettere più o meno in luce i sinonimi, da notare che la versione con l'identificativo separato dall'entità (diagramma di destra) ha una doppia riga nella relazione che lega le due entità, in che vuol dire che quello è l'attributo che si vuole utilizzare come identificatore.
+
+### Scheda di riferimento preferito composto
+Nel caso non sia possibile trovare un solo identificatore, si può utilizzare un simbolo che permette di identificare una entità attraverso più relazione che hanno significato insieme.
+![[Pasted image 20241227164633.png]]
+Nell'esempio viene utilizzato l'identificatore composto per identificare l'entità lavoratore in quanto l'id slegato dalla compagnia perde significato, in quanto in compagnie diverse possono essere presenti più volte gli stessi id per identificare lavoratori diversi.
+L'introduzione del simbolo permette di descrivere che per ogni coppia company empID esiste al massimo un lavoratore che lavora in quella compagnia e ha quell'empID.
+
+## Step 6
+Lo step 6 è *utilizzato per aggiungere valori, relazioni insiemistiche* (subset, uguaglianza, esclusione) *e vincoli riguardanti i sottotipi*.
+![[Pasted image 20241228103056.png]]
+### Valori
+Per quanto riguarda i valori, è possibile andare a specificarli sia come elenco, quindi enumerando tutti i valori che fanno parte del dominio, sia come Range, andando a inserire il valore di partenza e valore di arrivo, è anche possibile specificare se questi sono inclusi o no nel dominio dei valori.
+![[Pasted image 20241228103235.png]]
+I valori possono sia essere associati alle entità, sia associati alle relazioni.
+### Relazioni insiemistiche
+Le relazioni che sono presenti sono:
+- Subset
+- Equality
+- Exclusion
+#### Subset
+La relazione subset viene utilizzata quando voglio specificare che *tutte le relazioni sono sottoparte di un insieme più grande che contiene anche altri elementi al suo interno*
+![[Pasted image 20241228110707.png]]
+
+Tutte le aziende che offrono servizi di ecommerce devono avere una banca virtuale, ma anche le aziende che non hanno ecommerce possono avere una banca virtuale.
+#### Equality
+Simile a subset, ma in questo caso *le popolazioni delle relazioni devono essere per forza la stessa*
+![[Pasted image 20241228110856.png]]
+
+Tutte le persone che hanno uno username per autenticarsi hanno anche una password, di conseguenza la popolazione della relazione persona-username sarà identica alla popolazione della relazione persona-password.
+#### Exclusion
+Questo vincolo dice che *l'intersezione tra le popolazioni delle relazioni è vuoto.*
+![[Pasted image 20241228111127.png]]
+Ovvero un prestito può essere in stato aperto o in attesa per un determinato cliente, non è possibile che il prestito sia contemporaneamente in entrambi gli stati, però potrebbe esistere un caso in cui il prestito sia in uno stato diverso da questi due, con questo vincolo non sto dicendo che la popolazione di prestito si divide solamente in quelle due possibilità, ma sto dicendo che quelle possibilità non possono esistere contemporaneamente.
+Nel caso si voglia esprimere che *la popolazione fa parte di una relazione o dell'altra* si può utilizzare il vincolo
+![[Pasted image 20241228112652.png]]
+Che nella forma compatta diventa
+![[Pasted image 20241228112621.png]]
+Ovvero l'unione tra il vincolo di esclusività e il vincolo di disgiunzione obbligatoria.
+Nell'esempio riportato in figura, quindi, esplicito che la relazione prestito cliente deve per forza assumere uno tra i due valori proposti.
+
+I sottoinsiemi possono anche riguardare entrambe le relazioni e non una sola come visto negli esempi precedenti, in questo caso, il collegamento del vincolo parte dalla parte centrale della relazione.
+In caso di relazioni multiple, verrà utilizzato un archetto che indica le entità della relazione che sono prese in considerazione.
+![[Pasted image 20241228114104.png]]L'inserimento dei vincoli è necessario per avere un diagramma più stretto sul significato che si vuole rappresentare, alcune volte l'inserimento può essere derivato dalla costruzione del diagramma, come nei seguenti casi, è sempre meglio comunque inserire il vincolo.
+![[Pasted image 20241228115339.png]]
+### SottoTipo
+Il sottotipo viene molto spesso utilizzato come nella programmazione ad oggetti, ovvero esiste un tipo padre generico e n sottotipi che vanno ad aggiungere informazioni specifiche non vere per tutti gli oggetti figli.
+Anche nel caso dei sottotipi posso andare ad aggiungere vincoli del tipo insiemistico per dare un significato più vincolante alla relazione
+![[Pasted image 20241228115543.png]]
+I sottotipi prendono l'identificativo dichiarato nell'oggetto padre a meno che non venga specificato diversamente
+![[Pasted image 20241228115722.png]]
+La freccia tratteggiata e l'inserimento di un identificatore diverso stanno a significare che quell'entità è sottotipo dell'entità padre, ma non condivide l'identificatore con lui.
+![[Pasted image 20241228115904.png]]
+## Step 7
+In questo step posso inserire gli ultimi vincoli che possono riguardare la frequenza che le relazioni devono rispettare e i vincoli ad anello, che non sono veri e propri vincoli in quanto non è possibile verificare in maniera automatica la correttezza dei vincoli.
+Inoltre, essendo l'ultimo step, è necessario verificare che il diagramma sia corretto e che possa modellare tutti gli esempi e le richieste poste.
+
+Per quanto riguarda i vincoli legati alla frequenza, si inseriscono attraverso un numero sulla parte della relazione interessata, e significano che l'istanza dell'entità che partecipa nella relazione non può apparire più o meno di tot volte.
+![[Pasted image 20241228185044.png]]
+Oppure è possibile anche inserire un vincolo di frequenza esterno
+![[Pasted image 20241228185114.png]]
