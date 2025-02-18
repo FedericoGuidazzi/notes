@@ -6,7 +6,7 @@ La *concettualizzazione* delle descrizioni sono un insieme di invariazioni rilev
 
 È quindi necessario un **sistema di informazione** che sia condiviso tra gli agenti così da poter comunicare senza il problema dell'interpretazione che può variare da agente ad agente.
 
-- [9] Un **sistema di informazione** è un sistema che *colleziona*, *mantiene*, *processa* e *distribuisce* informazioni riguardanti un dominio per facilitare la *pianificazione*, il *controllo*, *coordinazione* e *presa di decisioni* all'interno di una organizzazione.
+- [ ] Un **sistema di informazione** è un sistema che *colleziona*, *mantiene*, *processa* e *distribuisce* informazioni riguardanti un dominio per facilitare la *pianificazione*, il *controllo*, *coordinazione* e *presa di decisioni* all'interno di una organizzazione.
 
 Il sistema di informazioni mantiene stati del dominio
 - **Intenzionali**, concetti che descrivono la struttura del dominio
