@@ -20,3 +20,32 @@ Per esempio, a partire dall'albero introdotto precedentemente, possiamo andare a
 ![[Pasted image 20250222104837.png]]
 Nell'esempio esposto il costo degli errori è uguale (FP e FN sono trattati nello stesso modo), nel caso in cui si voglia variare questa cosa, basta andare a variare la diagonale che utilizziamo per andare a individuare quale è il modello migliore.
 ![[Pasted image 20250222105040.png]]
+#### Scoring and Ranking
+Ogni scoring classifier ha una metrica chiamata **margin**, che indica quante istanze sono classificate in maniera corretta e quante in maniera non corretta.
+![[Pasted image 20250302135650.png]]
+Quindi il margin viene calcolato come il prodotto tra la classe (che può valere -1 o 1) e lo score (che assume valori maggiori di 0 se la classe è ritenuta positiva e minori di zero se la classe è ritenuta negativa), di conseguenza otterrò che se il margin è positivo allora l'istanza è classificata bene, mentre se è negativo c'è stato un errore.
+
+Dal margin possiamo ricondurci alla **Loss Function**, ovvero una funzione che va a dare una penalizzazione al modello in caso compia degli errori, il funzionamento di queste funzioni si basano sul margin e associano grandi penalità a valori di margin molto negativi e penalità praticamente nulle a margin molto positivi.
+Esistono molti tipi di loss function e non ne esiste una migliore, in base a quella che è l'applicazione bisogna andare a individuare quale può essere la più corretta.
+
+È necessario, inoltre, individuare anche l'*error rate* dei modelli ottenuti, la formula per calcolarlo è
+![[Pasted image 20250302140431.png]]
+Ovvero per tutte le coppie di istanze positive e negative che posso creare in un dataset, analizzo la classificazione fatta e aggiungo un punto di penalità nel caso la classificazione della classe positiva sia inferiore a quella della classe negativa (il che vuol dire che un caso negativo è stato ritornato prima di un caso positivo) oppure aggiungo mezzo punto nel caso che entrambe le classi abbiano lo stesso posto, negli altri casi non aggiungo niente.
+**ES:**
+![[Pasted image 20250302140914.png]]
+
+Nel caso dei classificatori probabilistici, ovvero quelli che ad ogni foglia dell'albero associano una probabilità di appartenere ad una classe, si può calcolare l'errore in una maniera più efficiente: il **Mean Squared Probability Error**, questo errore fa uso dello squared error per poi fare una media su tutte le istanze dei dati.
+Lo squared error è calcolato come segue:
+$$\frac{1}{2}||\hat{p}(x)-I_{c(x)}||_{2}^2$$
+Ovvero (valore predetto - valore reale)² fratto 2.
+![[Pasted image 20250302141720.png]]
+
+La metrica di errore, come detto prima è il Mean Squared Error, che viene calcolato come:
+$$MSE(Te)=\frac{1}{|Te|}\sum_{x\in{Te}}{SE(x)}$$
+### Multi Class Classification
+Oltre la classificazione binaria esiste anche la classificazione con più classi.
+La classificazione multiclasse può avvenire in due modi diversi:
+- one-vs-rest schema, ovvero una classe viene messa a confronto diretto con tutte le altre contemporaneamente.
+- one-vs-one schema, ovvero una classe viene messa a confronto con tutte le altre ma in momenti diversi.
+Questa tipologia di classificazione però può avere dei problemi in entrambi gli utilizzi in quanto nello schema one-vs-rest molto spesso c'è uno sbilanciamento tra classi, il che porta poi a dei problemi nell'apprendimento.
+Mentre nello schema one-vs-one abbiamo il problema che andiamo a restringere molto il dominio dei dati rimanendo con troppi pochi esempi per ottenere dei buoni risultati.
