@@ -42,10 +42,28 @@ Ovvero (valore predetto - valore reale)² fratto 2.
 
 La metrica di errore, come detto prima è il Mean Squared Error, che viene calcolato come:
 $$MSE(Te)=\frac{1}{|Te|}\sum_{x\in{Te}}{SE(x)}$$
-### Multi Class Classification
+### MultiClass Classification
 Oltre la classificazione binaria esiste anche la classificazione con più classi.
 La classificazione multiclasse può avvenire in due modi diversi:
 - one-vs-rest schema, ovvero una classe viene messa a confronto diretto con tutte le altre contemporaneamente.
 - one-vs-one schema, ovvero una classe viene messa a confronto con tutte le altre ma in momenti diversi.
 Questa tipologia di classificazione però può avere dei problemi in entrambi gli utilizzi in quanto nello schema one-vs-rest molto spesso c'è uno sbilanciamento tra classi, il che porta poi a dei problemi nell'apprendimento.
 Mentre nello schema one-vs-one abbiamo il problema che andiamo a restringere molto il dominio dei dati rimanendo con troppi pochi esempi per ottenere dei buoni risultati.
+## Regression
+Nella regressione il dato da predirre è un reale, quindi non sono più presenti dei valori finiti da predirre come potevano essere le classi.
+Questo problema, essendo molto più complesso della classificazione, è molto più prono al problema dell'overfitting, in quanto molto spesso, per cercare di ottenere dei buoni risultati, si tende a cercare di creare un modello troppo incentrato sui dati di training, il che lo porta a generalizzare con fatica.
+Dall'altra parte però, se creiamo un modello che è troppo generale abbiamo il problema dell'underfitting, ovvero il modello non riesce ad estrarre la conoscenza dai dati di training e quindi poi non riesce a predirre con buoni risultati ne sul training ne sul validation set.
+
+I due problemi sopra riportati sono alla base del **bias-variance dilemma**, ovvero:
+Un modello con poca complessità soffre meno di varianza ma introduce dei problemi dovuti al bias in quanto non sono state catturate le feature in modo preciso, un modello con molta complessità invece soffre di poco bias perché riesce ad estrarre le caratteristiche dei dati ma soffre di varianza.
+Il dilemma può anche essere scritto formalmente nel seguente modo:
+![[Pasted image 20250304091736.png]]
+## Clustering
+I problemi di clustering consistono nell'individuare dei gruppi di dati con caratteristiche simili, questo task può essere sia supervised che unsupervised in base a se le classi vengono fornite oppure vengono individuate in maniera autonoma.
+## Association rules
+Il problema consiste nell'individuazione di regole di associazione.
+ES:
+Si vogliono individuare i prodotti che solitamente vengono acquistati insieme (quindi con una causalità) utilizzando gli scontrini.
+Il modello che andrò ad addestrare quindi sarà in grado di dire che molto spesso se una persona compra il latte allora compra anche i biscotti (ma non è detto che se si comprano i biscotti allora si compri anche il latte).
+
+Questo problema risulta molto complesso per sua natura perché per ogni istanza devo studiare tutti i rapporti con le altre istanze sia in maniera singola sia in gruppo, andando così a richiedere una complessità computazionale molto elevata.
