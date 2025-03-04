@@ -1,0 +1,5 @@
+Il Business Process Management include tutti i concetti, metodo e tecniche per lo sviluppo di design, amministrazione, configurazione, sviluppo e analisi del business process.
+
+Storicamente le aziende basavano il loro studio sui processi, quindi si andavano a individuare i passi fondamentali dalla partenza fino all'arrivo di un prodotto o un servizio, questa visione, seppur corretta, tralascia molti aspetti che sono fondamentali per riuscire a pianificare e analizzare al meglio i risultati ottenuti da un'azienda, infatti al momento attuale un'azienda è chiamata a valutarsi costantemente sul mercato e a cercare nuove strategie e tecniche per innovarsi in modo da riuscire ad ottenere un vantaggio competitivo rispetto alle aziende competitor.
+
+Il BPM ha il compito di aiutare l'azienda nel processo di miglioramento e individuazione di soluzioni sub-ottime, cercando così di limitare gli sprechi di risorse per avere una migliore efficienza.
