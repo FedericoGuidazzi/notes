@@ -1,0 +1,4 @@
+Il concept learning è un metodo di apprendimento che si basa nell'individuazione di feature che caratterizzano l'appartenenza dell'oggetto ad una classe.
+In base alle caratteristiche l'algoritmo impara un inductive bias, ovvero un insieme di concetti che utilizza per arrivare al fine, a partire da degli esempi forniti da un oracolo (esempi etichettati).
+Una volta ottenuta la conoscenza sotto forma di bias, posso utilizzarla per applicare la conoscenza a esempi non ancora visti.
+Attraverso l'allenamento della rete posso andare a modificare il bias andando a renderlo più o meno ampio, così da ottenere il miglior risultato possibile durante la fase di utilizzo del modello ottenuto.
