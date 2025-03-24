@@ -34,3 +34,6 @@ Questo algoritmo può:
 - Fornire più ipotesi, che poi possono essere utilizzare in maniera congiunta per riuscire ad ottenere una risposta (si prendono in considerazione tutti le ipotesi e poi si sceglie la risposta in base alla maggioranza delle risposte)
 ## Richiesta di esempi a un oracolo
 Nel caso ci sia la possibilità di richiedere maggiori dati per l'addestramento del modello allora la scelta migliore è quella di andare a richiedere informazioni riguardanti a casistiche che vanno a fare più chiarezza possibile all'interno delle ipotesi, per esempio se una feature mi divide lo spazio delle ipotesi in due, allora può essere una buona idea andare a chiedere informazioni su quella feature così da andare a scartare quante più ipotesi possibili.
+## Salto induttivo
+Il bias nei modelli consiste nella conoscenza che viene estrapolata dai dati per riuscire a generalizzare i concetti appresi su dati non ancora visti.
+Un algoritmo senza bias dovrebbe analizzare un quantitativo di dati troppo elevati di conseguenza l'eliminazione di bias comporta solo dei peggioramenti nelle prestazioni dell'algoritmo.
